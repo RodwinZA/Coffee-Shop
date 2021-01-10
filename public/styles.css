@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    line-height: 1.5;
+    width: 100%;
+}
+
+/* HERO SECTION */
+
+.hero--section {
+    background-image: url(./images/coffee-with-note.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero__section__header {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.hero__section__text {
+    color: #ffffff;
+    font-weight: 300;
+    margin: 30px 0 40px;
+    letter-spacing: 2px;
+}
+
+.hero__section__cta {
+    align-self: flex-start;
+    background-color: chocolate;
+    border-radius: 25px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+/* ABOUT US */
+
+.about--us {
+    height: auto;
+    padding: 60px 20px;
+}
+
+.about--us--one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__us__header {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about__us__text {
+    font-weight: 300;
+    margin: 30px 0 40px;
+    letter-spacing: 2px;
+}
+
+.about__us__cta {
+    align-self: center;
+    background-color: chocolate;
+    border-radius: 25px;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+.about--us--two {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about--us--two img {
+    height: 150px;
+}
+
+
+@media screen and (min-width: 700px){
+    /* HERO SECTION */
+    .hero--section {
+        padding: 0 40px;
+    }
+
+    .hero__section__header {
+        font-size: 48px;
+    }
+
+    .hero__section__text {
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .about--us--two img {
+        height: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 1125px){
+    /* HERO SECTION */
+    .hero--section {
+        padding: 0 60px;
+    }
+
+    .hero__section__header {
+        font-size: 56px;
+    }
+
+    /* ABOUT US */
+    .about--us {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 60px;
+    }
+
+    .about--us--one {
+        flex-basis: 40%;
+        margin-left: 60px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .about--us--two {
+        flex-basis: 60%;
+    }
+
+    .about--us--two img {
+        height: 300px;
+    }
+
+    .about__us__cta {
+        align-self: flex-start;
+    }
+}

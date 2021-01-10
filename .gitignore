@@ -1,0 +1,2 @@
+# node modules can be added by running npm init and only bloats 
+node_modules
